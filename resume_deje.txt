@@ -1,0 +1,86 @@
+================================================================================
+RESUMEN DEL PROYECTO - FRONTEND
+================================================================================
+
+TECNOLOGÍAS
+----------
+- React + Vite
+- React Router DOM
+- Axios
+- Context API (Auth)
+
+ESTRUCTURA
+---------
+frontend/
+├── src/
+│   ├── services/
+│   │   └── api.js           [CREADO]
+│   ├── context/
+│   │   └── AuthContext.jsx  [CREADO]
+│   ├── components/
+│   │   └── Layout.jsx       [CREADO]
+│   ├── pages/
+│   │   ├── Login.jsx       [CREADO]
+│   │   └── Dashboard.jsx    [CREADO]
+│   ├── App.jsx              [CREADO]
+│   └── main.jsx             [CREADO]
+
+================================================================================
+1. SETUP DE REACT [COMPLETO]
+================================================================================
+- Proyecto React + Vite creado
+- Router configurado
+- Auth context implementado
+- API service con axios
+- Layout con menú dinámico por roles
+
+================================================================================
+2. PUNTO DE VENTA (POS) [PENDIENTE]
+================================================================================
+- Interfaz para pantallas táctiles
+- Cobro rápido y emisión de tickets
+- Integración con lector de códigos
+
+================================================================================
+3. CONTROL DE STOCK [PENDIENTE]
+================================================================================
+- Inventario en tiempo real
+- Múltiples depósitos
+- Trazabilidad (lotes, series)
+
+================================================================================
+4. GESTIÓN COMERCIAL [PENDIENTE]
+================================================================================
+- Base de datos de clientes/proveedores
+- Generación de presupuestos, pedidos, facturas PDF
+- Dashboard de estadísticas
+
+================================================================================
+5. ACCESO MULTI-DISPOSITIVO [PENDIENTE]
+================================================================================
+- Diseño responsive (PC, tablet, celular)
+- Multiusuario con permisos
+
+================================================================================
+PÁGINAS CREADAS
+================================================================================
+- Login: /login
+- Dashboard: /
+
+PÁGINAS PENDIENTES
+================================================================================
+- /pos (Punto de Venta)
+- /productos
+- /clientes
+- /proveedores
+- /ventas
+- /cajas
+- /stock-bajo
+
+================================================================================
+LO QUE FALTA IMPLEMENTAR
+================================================================================
+2. Punto de Venta (POS)
+3. Control de Stock
+4. Gestión Comercial
+5. Acceso Multi-dispositivo

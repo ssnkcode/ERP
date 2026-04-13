@@ -1,0 +1,22 @@
+backend-gestion/
+├── server.js
+├── .env
+├── package.json
+├── config/
+│   └── database.js
+├── controllers/
+│   ├── productos.controller.js
+│   ├── clientes.controller.js
+│   ├── proveedores.controller.js
+│   ├── ventas.controller.js
+│   ├── cajas.controller.js
+│   └── pdf.controller.js
+├── routes/
+│   ├── productos.routes.js
+│   ├── clientes.routes.js
+│   ├── proveedores.routes.js
+│   ├── ventas.routes.js
+│   ├── cajas.routes.js
+│   └── pdf.routes.js
+└── middlewares/
+    └── auth.middleware.js

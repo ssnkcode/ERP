@@ -1,0 +1,8 @@
+# Inicializar proyecto
+mkdir backend-gestion
+cd backend-gestion
+npm init -y
+
+# Instalar dependencias
+npm install express pg dotenv cors bcrypt jsonwebtoken
+npm install -D nodemon
