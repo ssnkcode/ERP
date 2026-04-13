@@ -1,13 +1,27 @@
 ================================================================================
-RESUMEN DEL PROYECTO - FRONTEND
+RESUMEN DEL PROYECTO
 ================================================================================
 
 TECNOLOGÍAS
-----------
+-----------
+FRONTEND:
 - React + Vite
 - React Router DOM
 - Axios
 - Context API (Auth)
+
+BACKEND:
+- Node.js + Express
+- PostgreSQL + pg
+- JWT para autenticación
+
+================================================================================
+CAMBIOS RECIENTES (13/04/2026)
+================================================================================
+- Agregado authMiddleware a todas las rutas de cajas
+- Corregido: req.user -> req.usuario en cajas.controller.js
+- Corregido puerto DB: 5434 -> 5432 en .env
+- Creada tabla cajas y vista caja_abierta_actual [YA EXISTEN EN DB]
 
 ESTRUCTURA
 ---------
@@ -67,20 +81,37 @@ PÁGINAS CREADAS
 - Login: /login
 - Dashboard: /
 
+PÁGINAS IMPLEMENTADAS (con backend)
+================================================================================
+- /productos - CRUD productos
+- /clientes - CRUD clientes
+- /proveedores - CRUD proveedores
+- /ventas - Lista ventas, crear venta
+- /cajas - Apertura/cierre caja, historial
+- /depositos - Gestión depósitos
+- /lotes - Control de lotes
+- /series - Control de números de serie
+- /estadisticas - Dashboard de estadísticas
+- /stock-bajo - Productos con stock bajo
+
 PÁGINAS PENDIENTES
 ================================================================================
-- /pos (Punto de Venta)
-- /productos
-- /clientes
-- /proveedores
-- /ventas
-- /cajas
-- /stock-bajo
+- /pos (Punto de Venta) - FALTA INTERFAZ DE COBRO
+
+================================================================================
+FUNCIONALIDADES IMPLEMENTADAS
+================================================================================
+- Autenticación JWT
+- Control de cajas (apertura/cierre)
+- Múltiples depósitos
+- Trazabilidad por lotes y números de serie
+- Movimiento de stock
+- Generación de facturas PDF
+- Dashboard de estadísticas
+- Rutas protegidas con middleware auth
 
 ================================================================================
 LO QUE FALTA IMPLEMENTAR
 ================================================================================
-2. Punto de Venta (POS)
-3. Control de Stock
-4. Gestión Comercial
-5. Acceso Multi-dispositivo
+2. Punto de Venta (POS) - Interfaz para pantallas táctiles, cobro rápido
+5. Acceso Multi-dispositivo - Diseño responsive
