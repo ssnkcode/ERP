@@ -13,7 +13,7 @@ const cajasController = {
 
     async aperturaCaja(req, res) {
         const { monto_inicial } = req.body;
-        const usuario_id = req.user.id;
+        const usuario_id = req.usuario.id;
         
         try {
             const cajaAbierta = await pool.query('SELECT * FROM caja_abierta_actual');

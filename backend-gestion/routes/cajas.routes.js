@@ -2,10 +2,11 @@
 const express = require('express');
 const router = express.Router();
 const cajasController = require('../controllers/cajas.controller');
+const authMiddleware = require('../middlewares/auth.middleware');
 
-router.get('/abierta', cajasController.getCajaAbierta);
-router.post('/apertura', cajasController.aperturaCaja);
-router.post('/:id/cierre', cajasController.cierreCaja);
-router.get('/historial', cajasController.getHistorialCajas);
+router.get('/abierta', authMiddleware, cajasController.getCajaAbierta);
+router.post('/apertura', authMiddleware, cajasController.aperturaCaja);
+router.post('/:id/cierre', authMiddleware, cajasController.cierreCaja);
+router.get('/historial', authMiddleware, cajasController.getHistorialCajas);
 
 module.exports = router;
