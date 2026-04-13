@@ -170,14 +170,14 @@ img {
   padding: var(--spacing-sm);
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  /* gap: rem; */
   overflow-y: auto;
   max-height: calc(100vh - 160px);
 }
 
 .sidebar-link {
   display: block;
-  padding: 0.625rem 1rem;
+  padding: 2rem 1.25rem;
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
   border-radius: var(--radius-sm);
@@ -185,7 +185,7 @@ img {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 .sidebar-link:hover,

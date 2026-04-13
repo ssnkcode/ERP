@@ -12,10 +12,10 @@ const cajasController = {
     },
 
     async aperturaCaja(req, res) {
-        const { usuario_id, monto_inicial } = req.body;
+        const { monto_inicial } = req.body;
+        const usuario_id = req.user.id;
         
         try {
-            // Verificar si hay caja abierta
             const cajaAbierta = await pool.query('SELECT * FROM caja_abierta_actual');
             if (cajaAbierta.rows.length > 0) {
                 return res.status(400).json({ error: 'Ya hay una caja abierta' });
